@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Informatica</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.1/normalize.min.css"
+      integrity="sha512-4LOwU02Nd5dSi6HtpMbOywGovopqJy5jbuUHFK6t4sPBUuuM2wLZY0qiptkeFA06QSr6gU75EhrrXkbV7fedKQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="contenedorEleccion">
+      
+        <h1>Presupuesto para un ordenador</h1>
+        <!-- <p>Elija un modelo de ordenador y las características deseadas</p> -->
+        <form>
+        <div class="tipoModelo">
+          <div>
+            <img src="img/sobremesa.png" alt="Ordenador de sobremesa" />
+            <img src="img/portatil.png" alt="Ordenador de portatil" />
+          </div>
+          <div>
+            <!-- <label for="desktop"></label> -->
+            <input type="radio" name="modelo" value="desktop" id="desktop"/>
+
+            <!-- <label for="laptop"></label> -->
+            <input type="radio" name="modelo" value="laptop" id="laptop" />
+          </div>
+        </div>
+
+        <div class="caracteristicas">
+          <div class="columna">
+            <label for="os">Sistema operativo</label>
+            <select name="os" id="os">
+              <option value="w_7">Windows 7</option>
+              <option value="w_8">Windows 8</option>
+              <option value="w_10">Windows 10</option>
+            </select>
+          </div>
+
+          <div class="columna">
+            <label for="ram">Memoria RAM</label>
+            <select name="ram" id="ram">
+              <option value="GB_2">2GB DDR4</option>
+              <option value="GB_4">4GB DDR4</option>
+              <option value="GB_8">8GB DDR4</option>
+              <option value="GB_16">16GB DDR4</option>
+            </select>
+          </div>
+
+          <div class="columna">
+            <label for="hdd">Disco duro</label>
+            <select name="hdd" id="hdd">
+              <option value="GB_250" selected>250GB HDD</option>
+              <option value="GB_500">500GB HDD</option>
+              <option value="TB_1">1TB HDD</option>
+              <option value="TB_2">2TB HDD</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="extras">
+          <input type="checkbox" name="office" id="office" />Office
+          <input type="checkbox" name="antivirus" id="antivirus" />Antivirus
+          <input type="checkbox" name="servicio" id="servicio" />1 año servicio
+          técnico
+        </div>
+
+        <!-- <div>
+          <input type="submit" name="calcular" id="calcular" value="Calcular"
+          />
+        </div> -->
+      </form>
+    </div>
+
+    <div class="contenedorPresupuesto">
+      <div class="presupuesto">
+        <p>Elige los componentes que quieras para ver tu presupuesto.</p>
+      </div>
+    </div>
+  </body>
+</html>
